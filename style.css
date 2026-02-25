@@ -1,0 +1,90 @@
+:root {
+  --primary-color: rgb(213, 213, 213);
+  --secondary-color: hsl(168.31deg 42.31% 61.41%);
+}
+
+body {
+  margin: 0px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100vw;
+  background-color: var(--primary-color);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.users-container {
+  height: 100%;
+  width: 90%;
+  padding: 5em;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5em;
+}
+
+.user-stats {
+  display: flex;
+}
+
+.stat {
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-card {
+  height: 400px;
+  width: 300px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(185, 169, 169),
+    rgb(189, 182, 182)
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-details {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.1em;
+}
+
+.user-card:hover {
+  box-shadow: 4px 4px 8px #777;
+}
+
+#github-username {
+  font-size: 1.6em;
+}
+
+#avatar {
+  width: 70%;
+  height: 50%;
+}
+
+#avatar img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
